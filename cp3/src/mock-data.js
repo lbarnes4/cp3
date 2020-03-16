@@ -1,0 +1,703 @@
+let mock = [{
+  "id": 1,
+  "first_name": "Ibbie",
+  "last_name": "Prigmore",
+  "date": "7/8/2019",
+  "game": "slidingpuzzle",
+  "high_score": 133
+}, {
+  "id": 2,
+  "first_name": "Gabriel",
+  "last_name": "Sivewright",
+  "date": "11/25/2019",
+  "game": "slidingpuzzle",
+  "high_score": 274
+}, {
+  "id": 3,
+  "first_name": "Levi",
+  "last_name": "Pollicatt",
+  "date": "1/31/2020",
+  "game": "slidingpuzzle",
+  "high_score": 385
+}, {
+  "id": 4,
+  "first_name": "Robers",
+  "last_name": "Stuttard",
+  "date": "10/1/2019",
+  "game": "slidingpuzzle",
+  "high_score": 246
+}, {
+  "id": 5,
+  "first_name": "Tobiah",
+  "last_name": "Zimmerman",
+  "date": "12/21/2019",
+  "game": "slidingpuzzle",
+  "high_score": 371
+}, {
+  "id": 6,
+  "first_name": "Raynard",
+  "last_name": "Bebbington",
+  "date": "9/28/2019",
+  "game": "minesweeper",
+  "high_score": 270
+}, {
+  "id": 7,
+  "first_name": "Shane",
+  "last_name": "Montilla",
+  "date": "10/6/2019",
+  "game": "slidingpuzzle",
+  "high_score": 492
+}, {
+  "id": 8,
+  "first_name": "Franky",
+  "last_name": "Schuster",
+  "date": "10/17/2019",
+  "game": "slidingpuzzle",
+  "high_score": 162
+}, {
+  "id": 9,
+  "first_name": "Emmett",
+  "last_name": "Fradgley",
+  "date": "3/23/2019",
+  "game": "slidingpuzzle",
+  "high_score": 220
+}, {
+  "id": 10,
+  "first_name": "Cindie",
+  "last_name": "Moyles",
+  "date": "7/9/2019",
+  "game": "minesweeper",
+  "high_score": 198
+}, {
+  "id": 11,
+  "first_name": "Leonora",
+  "last_name": "Lidstone",
+  "date": "12/29/2019",
+  "game": "minesweeper",
+  "high_score": 303
+}, {
+  "id": 12,
+  "first_name": "Haley",
+  "last_name": "Wardle",
+  "date": "3/3/2020",
+  "game": "minesweeper",
+  "high_score": 117
+}, {
+  "id": 13,
+  "first_name": "Prentice",
+  "last_name": "Coyle",
+  "date": "11/2/2019",
+  "game": "slidingpuzzle",
+  "high_score": 209
+}, {
+  "id": 14,
+  "first_name": "Amory",
+  "last_name": "Vernazza",
+  "date": "3/3/2020",
+  "game": "minesweeper",
+  "high_score": 397
+}, {
+  "id": 15,
+  "first_name": "Karita",
+  "last_name": "Hefner",
+  "date": "6/28/2019",
+  "game": "minesweeper",
+  "high_score": 212
+}, {
+  "id": 16,
+  "first_name": "Skye",
+  "last_name": "Pattingson",
+  "date": "5/27/2019",
+  "game": "minesweeper",
+  "high_score": 194
+}, {
+  "id": 17,
+  "first_name": "Violette",
+  "last_name": "Sporner",
+  "date": "12/13/2019",
+  "game": "minesweeper",
+  "high_score": 269
+}, {
+  "id": 18,
+  "first_name": "Joeann",
+  "last_name": "Cuardall",
+  "date": "11/17/2019",
+  "game": "slidingpuzzle",
+  "high_score": 336
+}, {
+  "id": 19,
+  "first_name": "Allianora",
+  "last_name": "Hurn",
+  "date": "3/29/2019",
+  "game": "minesweeper",
+  "high_score": 216
+}, {
+  "id": 20,
+  "first_name": "Lanny",
+  "last_name": "Romero",
+  "date": "6/28/2019",
+  "game": "slidingpuzzle",
+  "high_score": 405
+}, {
+  "id": 21,
+  "first_name": "Alexis",
+  "last_name": "Lannen",
+  "date": "10/7/2019",
+  "game": "slidingpuzzle",
+  "high_score": 490
+}, {
+  "id": 22,
+  "first_name": "Cirilo",
+  "last_name": "Pinckard",
+  "date": "10/17/2019",
+  "game": "slidingpuzzle",
+  "high_score": 211
+}, {
+  "id": 23,
+  "first_name": "Nariko",
+  "last_name": "Sievewright",
+  "date": "5/19/2019",
+  "game": "slidingpuzzle",
+  "high_score": 105
+}, {
+  "id": 24,
+  "first_name": "Burtie",
+  "last_name": "Ech",
+  "date": "11/4/2019",
+  "game": "minesweeper",
+  "high_score": 220
+}, {
+  "id": 25,
+  "first_name": "Ortensia",
+  "last_name": "Balfre",
+  "date": "9/6/2019",
+  "game": "slidingpuzzle",
+  "high_score": 354
+}, {
+  "id": 26,
+  "first_name": "Laure",
+  "last_name": "Hadcock",
+  "date": "10/8/2019",
+  "game": "slidingpuzzle",
+  "high_score": 176
+}, {
+  "id": 27,
+  "first_name": "Rachel",
+  "last_name": "Wyett",
+  "date": "3/11/2020",
+  "game": "minesweeper",
+  "high_score": 393
+}, {
+  "id": 28,
+  "first_name": "Shem",
+  "last_name": "Keenlyside",
+  "date": "2/3/2020",
+  "game": "minesweeper",
+  "high_score": 456
+}, {
+  "id": 29,
+  "first_name": "Hillary",
+  "last_name": "De Roos",
+  "date": "11/6/2019",
+  "game": "minesweeper",
+  "high_score": 470
+}, {
+  "id": 30,
+  "first_name": "Babb",
+  "last_name": "Gantlett",
+  "date": "12/4/2019",
+  "game": "slidingpuzzle",
+  "high_score": 219
+}, {
+  "id": 31,
+  "first_name": "Mella",
+  "last_name": "Skelhorn",
+  "date": "5/31/2019",
+  "game": "minesweeper",
+  "high_score": 217
+}, {
+  "id": 32,
+  "first_name": "Ty",
+  "last_name": "Birkhead",
+  "date": "5/29/2019",
+  "game": "slidingpuzzle",
+  "high_score": 397
+}, {
+  "id": 33,
+  "first_name": "Cicily",
+  "last_name": "Godain",
+  "date": "4/12/2019",
+  "game": "slidingpuzzle",
+  "high_score": 324
+}, {
+  "id": 34,
+  "first_name": "Gloriana",
+  "last_name": "Brigginshaw",
+  "date": "7/2/2019",
+  "game": "minesweeper",
+  "high_score": 343
+}, {
+  "id": 35,
+  "first_name": "Davida",
+  "last_name": "Yeoman",
+  "date": "8/20/2019",
+  "game": "minesweeper",
+  "high_score": 496
+}, {
+  "id": 36,
+  "first_name": "Tades",
+  "last_name": "Killingsworth",
+  "date": "5/6/2019",
+  "game": "minesweeper",
+  "high_score": 437
+}, {
+  "id": 37,
+  "first_name": "Garvey",
+  "last_name": "Klesse",
+  "date": "2/23/2020",
+  "game": "minesweeper",
+  "high_score": 435
+}, {
+  "id": 38,
+  "first_name": "Farlay",
+  "last_name": "Neljes",
+  "date": "12/1/2019",
+  "game": "slidingpuzzle",
+  "high_score": 468
+}, {
+  "id": 39,
+  "first_name": "Thorstein",
+  "last_name": "Attrill",
+  "date": "7/13/2019",
+  "game": "slidingpuzzle",
+  "high_score": 362
+}, {
+  "id": 40,
+  "first_name": "Delaney",
+  "last_name": "Gierok",
+  "date": "6/27/2019",
+  "game": "minesweeper",
+  "high_score": 146
+}, {
+  "id": 41,
+  "first_name": "Ammamaria",
+  "last_name": "Seyffert",
+  "date": "12/22/2019",
+  "game": "slidingpuzzle",
+  "high_score": 148
+}, {
+  "id": 42,
+  "first_name": "Robbi",
+  "last_name": "Furber",
+  "date": "7/26/2019",
+  "game": "slidingpuzzle",
+  "high_score": 195
+}, {
+  "id": 43,
+  "first_name": "Katey",
+  "last_name": "Vampouille",
+  "date": "1/12/2020",
+  "game": "minesweeper",
+  "high_score": 133
+}, {
+  "id": 44,
+  "first_name": "Ethe",
+  "last_name": "Cortese",
+  "date": "11/21/2019",
+  "game": "minesweeper",
+  "high_score": 385
+}, {
+  "id": 45,
+  "first_name": "Zared",
+  "last_name": "Gawler",
+  "date": "1/5/2020",
+  "game": "minesweeper",
+  "high_score": 247
+}, {
+  "id": 46,
+  "first_name": "Lane",
+  "last_name": "Bodman",
+  "date": "12/31/2019",
+  "game": "minesweeper",
+  "high_score": 115
+}, {
+  "id": 47,
+  "first_name": "Riobard",
+  "last_name": "Panswick",
+  "date": "5/21/2019",
+  "game": "slidingpuzzle",
+  "high_score": 421
+}, {
+  "id": 48,
+  "first_name": "Roderich",
+  "last_name": "Privost",
+  "date": "12/22/2019",
+  "game": "minesweeper",
+  "high_score": 352
+}, {
+  "id": 49,
+  "first_name": "Manon",
+  "last_name": "Gervaise",
+  "date": "7/24/2019",
+  "game": "slidingpuzzle",
+  "high_score": 114
+}, {
+  "id": 50,
+  "first_name": "Norbie",
+  "last_name": "Formie",
+  "date": "9/11/2019",
+  "game": "minesweeper",
+  "high_score": 434
+}, {
+  "id": 51,
+  "first_name": "Kristien",
+  "last_name": "Oats",
+  "date": "12/2/2019",
+  "game": "minesweeper",
+  "high_score": 437
+}, {
+  "id": 52,
+  "first_name": "Ida",
+  "last_name": "Wabb",
+  "date": "12/11/2019",
+  "game": "minesweeper",
+  "high_score": 167
+}, {
+  "id": 53,
+  "first_name": "Alan",
+  "last_name": "Summerrell",
+  "date": "4/15/2019",
+  "game": "minesweeper",
+  "high_score": 310
+}, {
+  "id": 54,
+  "first_name": "Lishe",
+  "last_name": "Bertson",
+  "date": "12/8/2019",
+  "game": "slidingpuzzle",
+  "high_score": 495
+}, {
+  "id": 55,
+  "first_name": "Wait",
+  "last_name": "Matitiaho",
+  "date": "11/30/2019",
+  "game": "minesweeper",
+  "high_score": 305
+}, {
+  "id": 56,
+  "first_name": "Colas",
+  "last_name": "Bingham",
+  "date": "8/18/2019",
+  "game": "minesweeper",
+  "high_score": 228
+}, {
+  "id": 57,
+  "first_name": "Ana",
+  "last_name": "Wixey",
+  "date": "6/21/2019",
+  "game": "minesweeper",
+  "high_score": 425
+}, {
+  "id": 58,
+  "first_name": "Simonne",
+  "last_name": "Haughey",
+  "date": "9/23/2019",
+  "game": "slidingpuzzle",
+  "high_score": 224
+}, {
+  "id": 59,
+  "first_name": "Zena",
+  "last_name": "Shailer",
+  "date": "1/18/2020",
+  "game": "minesweeper",
+  "high_score": 206
+}, {
+  "id": 60,
+  "first_name": "Westbrook",
+  "last_name": "Merington",
+  "date": "7/15/2019",
+  "game": "minesweeper",
+  "high_score": 168
+}, {
+  "id": 61,
+  "first_name": "Susanna",
+  "last_name": "Richardeau",
+  "date": "7/27/2019",
+  "game": "minesweeper",
+  "high_score": 134
+}, {
+  "id": 62,
+  "first_name": "Anna-diana",
+  "last_name": "Kerans",
+  "date": "4/18/2019",
+  "game": "minesweeper",
+  "high_score": 129
+}, {
+  "id": 63,
+  "first_name": "Min",
+  "last_name": "Broggio",
+  "date": "6/25/2019",
+  "game": "slidingpuzzle",
+  "high_score": 315
+}, {
+  "id": 64,
+  "first_name": "Morey",
+  "last_name": "Deeble",
+  "date": "1/12/2020",
+  "game": "minesweeper",
+  "high_score": 327
+}, {
+  "id": 65,
+  "first_name": "Stacia",
+  "last_name": "Rubinfeld",
+  "date": "9/15/2019",
+  "game": "slidingpuzzle",
+  "high_score": 311
+}, {
+  "id": 66,
+  "first_name": "Cheri",
+  "last_name": "Benge",
+  "date": "2/28/2020",
+  "game": "minesweeper",
+  "high_score": 363
+}, {
+  "id": 67,
+  "first_name": "Barr",
+  "last_name": "Angear",
+  "date": "6/28/2019",
+  "game": "slidingpuzzle",
+  "high_score": 413
+}, {
+  "id": 68,
+  "first_name": "Guss",
+  "last_name": "Fedorski",
+  "date": "4/27/2019",
+  "game": "minesweeper",
+  "high_score": 163
+}, {
+  "id": 69,
+  "first_name": "Jasmine",
+  "last_name": "Waterstone",
+  "date": "8/29/2019",
+  "game": "minesweeper",
+  "high_score": 271
+}, {
+  "id": 70,
+  "first_name": "Janos",
+  "last_name": "Mitchard",
+  "date": "8/7/2019",
+  "game": "slidingpuzzle",
+  "high_score": 486
+}, {
+  "id": 71,
+  "first_name": "Arther",
+  "last_name": "Lyne",
+  "date": "12/31/2019",
+  "game": "slidingpuzzle",
+  "high_score": 120
+}, {
+  "id": 72,
+  "first_name": "Fifine",
+  "last_name": "Spriddle",
+  "date": "7/4/2019",
+  "game": "slidingpuzzle",
+  "high_score": 416
+}, {
+  "id": 73,
+  "first_name": "Cullin",
+  "last_name": "Hanniger",
+  "date": "2/15/2020",
+  "game": "slidingpuzzle",
+  "high_score": 328
+}, {
+  "id": 74,
+  "first_name": "Maris",
+  "last_name": "Motion",
+  "date": "8/22/2019",
+  "game": "slidingpuzzle",
+  "high_score": 223
+}, {
+  "id": 75,
+  "first_name": "Rania",
+  "last_name": "Marsland",
+  "date": "7/18/2019",
+  "game": "slidingpuzzle",
+  "high_score": 118
+}, {
+  "id": 76,
+  "first_name": "Nikolas",
+  "last_name": "Jahn",
+  "date": "6/16/2019",
+  "game": "slidingpuzzle",
+  "high_score": 242
+}, {
+  "id": 77,
+  "first_name": "Felicia",
+  "last_name": "Jayme",
+  "date": "2/14/2020",
+  "game": "minesweeper",
+  "high_score": 358
+}, {
+  "id": 78,
+  "first_name": "Friedrich",
+  "last_name": "Atthow",
+  "date": "1/4/2020",
+  "game": "minesweeper",
+  "high_score": 197
+}, {
+  "id": 79,
+  "first_name": "Leeanne",
+  "last_name": "Mortell",
+  "date": "10/25/2019",
+  "game": "slidingpuzzle",
+  "high_score": 492
+}, {
+  "id": 80,
+  "first_name": "Alexandro",
+  "last_name": "Mouat",
+  "date": "4/24/2019",
+  "game": "minesweeper",
+  "high_score": 123
+}, {
+  "id": 81,
+  "first_name": "Mathe",
+  "last_name": "Millan",
+  "date": "5/18/2019",
+  "game": "slidingpuzzle",
+  "high_score": 167
+}, {
+  "id": 82,
+  "first_name": "Nye",
+  "last_name": "Whitby",
+  "date": "10/26/2019",
+  "game": "slidingpuzzle",
+  "high_score": 351
+}, {
+  "id": 83,
+  "first_name": "Aharon",
+  "last_name": "Bouts",
+  "date": "4/4/2019",
+  "game": "minesweeper",
+  "high_score": 353
+}, {
+  "id": 84,
+  "first_name": "Tonnie",
+  "last_name": "Philipsohn",
+  "date": "2/6/2020",
+  "game": "slidingpuzzle",
+  "high_score": 279
+}, {
+  "id": 85,
+  "first_name": "Yul",
+  "last_name": "Overill",
+  "date": "7/12/2019",
+  "game": "slidingpuzzle",
+  "high_score": 115
+}, {
+  "id": 86,
+  "first_name": "Griz",
+  "last_name": "Georghiou",
+  "date": "6/5/2019",
+  "game": "slidingpuzzle",
+  "high_score": 355
+}, {
+  "id": 87,
+  "first_name": "Darlene",
+  "last_name": "Kirrage",
+  "date": "4/5/2019",
+  "game": "slidingpuzzle",
+  "high_score": 226
+}, {
+  "id": 88,
+  "first_name": "Patrice",
+  "last_name": "Knewstubb",
+  "date": "5/10/2019",
+  "game": "minesweeper",
+  "high_score": 302
+}, {
+  "id": 89,
+  "first_name": "Corly",
+  "last_name": "Franz-Schoninger",
+  "date": "12/29/2019",
+  "game": "slidingpuzzle",
+  "high_score": 194
+}, {
+  "id": 90,
+  "first_name": "Putnam",
+  "last_name": "Lapish",
+  "date": "5/10/2019",
+  "game": "slidingpuzzle",
+  "high_score": 159
+}, {
+  "id": 91,
+  "first_name": "Laetitia",
+  "last_name": "Jahn",
+  "date": "3/29/2019",
+  "game": "minesweeper",
+  "high_score": 425
+}, {
+  "id": 92,
+  "first_name": "Loy",
+  "last_name": "Browncey",
+  "date": "12/26/2019",
+  "game": "minesweeper",
+  "high_score": 343
+}, {
+  "id": 93,
+  "first_name": "Franchot",
+  "last_name": "Mackrell",
+  "date": "4/6/2019",
+  "game": "minesweeper",
+  "high_score": 210
+}, {
+  "id": 94,
+  "first_name": "Carlos",
+  "last_name": "Petrozzi",
+  "date": "8/18/2019",
+  "game": "slidingpuzzle",
+  "high_score": 365
+}, {
+  "id": 95,
+  "first_name": "Koenraad",
+  "last_name": "Bletcher",
+  "date": "12/26/2019",
+  "game": "slidingpuzzle",
+  "high_score": 135
+}, {
+  "id": 96,
+  "first_name": "Osborn",
+  "last_name": "Leffek",
+  "date": "12/14/2019",
+  "game": "minesweeper",
+  "high_score": 260
+}, {
+  "id": 97,
+  "first_name": "Orel",
+  "last_name": "Crossingham",
+  "date": "3/11/2020",
+  "game": "slidingpuzzle",
+  "high_score": 419
+}, {
+  "id": 98,
+  "first_name": "Daphne",
+  "last_name": "Bousfield",
+  "date": "2/27/2020",
+  "game": "minesweeper",
+  "high_score": 163
+}, {
+  "id": 99,
+  "first_name": "Abrahan",
+  "last_name": "Nuth",
+  "date": "12/31/2019",
+  "game": "slidingpuzzle",
+  "high_score": 259
+}, {
+  "id": 100,
+  "first_name": "Alford",
+  "last_name": "Mapstone",
+  "date": "6/12/2019",
+  "game": "slidingpuzzle",
+  "high_score": 473
+}]
+
+export default mock;

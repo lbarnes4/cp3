@@ -47,6 +47,7 @@ export default {
 	background-image: url("../wood-wallpaper.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	padding-bottom: 100px;
 	background-size: cover;
 }
 

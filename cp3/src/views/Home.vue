@@ -3,9 +3,9 @@
 	<div class="home-content">
 		<h1>Welcome to Game Center!</h1>
 		<h2>Featured: Sliding Puzzle</h2>
-		<a class="component-link" href="/games">
+		<router-link to="/games" class="component-link">
 			<slidingpuzzle style="pointer-events: none;"/>
-		</a>
+		</router-link>
 	</div>
 </div>
 </template>

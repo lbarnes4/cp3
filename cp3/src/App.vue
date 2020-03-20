@@ -6,7 +6,7 @@
 			<router-link to="/highscores">High Scores</router-link>
 		</div>
 	<router-view />
-	<div class="footer"><a href="#">My GitHub</a></div>
+	<div class="footer"><a href="https://github.com/lbarnes4/cp3.git">My GitHub</a></div>
 	</div>
 </template>
 

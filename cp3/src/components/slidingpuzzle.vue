@@ -6,7 +6,7 @@
 			<p><strong>moves: </strong>{{moves}}</p>
 			<div class="grid">
 				<div v-for="block in blocks" :key="block.index">
-					<a href="#" v-on:click="move(block.index)" :id="block.index" class="block" :style="{'top': block.x * 25 + '%', 'left': block.y * 25 + '%'}">{{block.index}}
+					<a href="javascript:;" v-on:click="move(block.index)" :id="block.index" class="block" :style="{'top': block.x * 25 + '%', 'left': block.y * 25 + '%'}">{{block.index}}
 					</a>
 				</div>
 				<div v-if="finished" class="finished">
@@ -198,11 +198,11 @@ export default {
 .grid {
 	position: relative;
 	width: 300px;
+	max-width: 90%;
 	height: 300px;
 	display: flex;
 	margin: auto;
 	background-color: brown;
-	border: 5px solid orange;
 	border-radius: 5px;
 }
 
@@ -232,5 +232,14 @@ export default {
 	background-color: white;
 	z-index: 2;
 	box-shadow: 0 0 8px 0 gray;
+	display: flex;
+	flex-direction: column;
 }
+
+.finished input,
+.finished button {
+	margin: 5px 30px;
+}
+
+
 </style>

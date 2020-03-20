@@ -47,6 +47,7 @@ export default {
 .grid {
 	position: relative;
 	width: 300px;
+	max-width: 90%;
 	height: 300px;
 	border: 1px solid gray;
 	display: flex;

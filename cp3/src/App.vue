@@ -28,11 +28,13 @@
 
 	#nav a {
 		font-weight: bold;
-		color: #2c3e50;
+		color: lightgray;
+		padding: 10px;
 	}
 
 	#nav a.router-link-exact-active {
-		color: #42b983;
+		border: 1px solid lightgray;
+		border-radius: 4px;
 	}
 
 	.footer {
@@ -47,7 +49,7 @@
 	}
 
 	.footer a {
-		color: black;
+		color: white;
 		text-decoration: none;
 	}
 

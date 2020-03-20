@@ -173,6 +173,10 @@ export default {
 </script>
 
 <style>
+* {
+	box-sizing: border-box;
+}
+
 .wrapper {
 	display: flex;
 	justify-content: center;
@@ -195,9 +199,11 @@ export default {
 	position: relative;
 	width: 300px;
 	height: 300px;
-	border: 1px solid gray;
 	display: flex;
 	margin: auto;
+	background-color: brown;
+	border: 5px solid orange;
+	border-radius: 5px;
 }
 
 .block {
@@ -205,13 +211,16 @@ export default {
 	height: 20%;
 	margin: 2.5%;
 	position: absolute;
-	border: 1px solid black;
+	border: 5px solid orange;
+	border-radius: 5px;
 	display: flex;
+	background-color: #ffe6cc;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	font-size: 25px;
 }
 
 .finished {

@@ -42,17 +42,20 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .wrapper {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+	background-color: rgba(153, 77, 0,.7);
 }
 
 .scores {
+	background-color: white;
 	width: 800px;
 	margin: auto;
+	margin-bottom: 50px;
 	max-width: 90%;
 	display: flex;
 	flex-direction: column;
@@ -60,7 +63,7 @@ export default {
 }
 
 .score {
-	width: calc(100% - 20px);
+	width: 100%;
 	height: 50px;
 	border-bottom: 1px solid gray;
 	display: flex;
